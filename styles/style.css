@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(145deg, #ee82ee, slateblue, #a3893c, purple);
+  background-size: cover;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#title {
+  font-weight: 700;
+  margin: 20px auto;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.container .list {
+  margin: auto 15px;
+  font-size: 15px;
+  line-height: 1.7;
+  column-count: 2;
+  column-gap: 5%;
+}
+
+li > span {
+  font-weight: 700;
+}

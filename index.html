@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Main</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">css selectors</h1>
+        </header>
+        <main>
+            <ul class="list">
+                <li>class - this selector selects elements based on the value of their attribute "class".
+                    <br><span class="syntax-decoration">syntax:</span><br>.class-name {}
+                </li>
+                <li>id - this selector selects elements based on the value of their attribute "id".
+                    <br><span class="syntax-decoration">syntax:</span><br>#id-name {}
+                </li>
+                <li>attr - this selector selects all elements that have the given attribute or an attribute with a
+                    specific value.
+                    <br><span class="syntax-decoration">syntax:</span><br>[attr=value] {}
+                </li>
+                <li>tag/element - this selector selects the type of elements that the rule will apply to.
+                    <br><span class="syntax-decoration">syntax:</span><br>span {}
+                </li>
+                <li>" * " - selects all elements. optionally, it can be limited to a specific namespace or refer to the
+                    entire namespace.
+                    <br><span class="syntax-decoration">syntax:</span><br>* {}
+                </li>
+                <li>" , " - grouping method, it selects all matching selectors.
+                    <br><span class="syntax-decoration">syntax:</span><br>div, span {}
+                </li>
+                <li>" " - selects elements that are inside the specified element (regardless of nesting level).
+                    <br><span class="syntax-decoration">syntax:</span><br>div span {}
+                </li>
+                <li>" > " - selects only those elements that are directly children of the specified element.
+                    <br><span class="syntax-decoration">syntax:</span><br>ul > li {}
+                </li>
+                <li>" ~ " - selects elements that are at the same nesting level, after the specified element, with the
+                    common parent.
+                    <br><span class="syntax-decoration">syntax:</span><br>p ~ span {}
+                </li>
+                <li>" + " - selects the element immediately after the specified element if they have a common parent.
+                    <br><span class="syntax-decoration">syntax:</span><br>ul + li {}
+                </li>
+            </ul>
+        </main>
+    </div>
+</body>
+
+</html>
