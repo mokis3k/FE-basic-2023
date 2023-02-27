@@ -27,6 +27,8 @@
   text-align: center;
 }
 
+/* wrapper 1 */
+
 .wrapper1 .block {
   width: 150px;
   height: 150px;
@@ -36,6 +38,8 @@
 .wrapper1 .block:nth-child(2) {
   float: right;
 }
+
+/* wrapper 2 */
 
 .wrapper2 .block {
   width: 150px;
@@ -52,6 +56,8 @@
   width: 75px;
   height: 75px;
 }
+
+/* wrapper 3 */
 
 .wrapper3 .group {
   float: left;
