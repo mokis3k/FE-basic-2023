@@ -9,6 +9,7 @@
 }
 
 .container {
+  padding: 20px;
   width: 800px;
   margin: auto;
   background: #c4c4c4;
@@ -18,7 +19,6 @@
 .wrapper2,
 .wrapper3 {
   overflow: auto;
-  margin: 20px;
   background: #E6E6E6;
 }
 
@@ -41,6 +41,10 @@
 }
 
 /* wrapper 2 */
+
+.wrapper2 {
+  margin: 20px 0;
+}
 
 .wrapper2 .block {
   width: 150px;
