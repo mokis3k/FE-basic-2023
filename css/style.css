@@ -19,6 +19,7 @@
 .wrapper3 {
   overflow: auto;
   margin: 20px;
+  background: #E6E6E6;
 }
 
 .block {
@@ -52,7 +53,7 @@
 }
 
 .wrapper2 .group .block {
-  margin: 5px;
+  margin-left: 10px;
   width: 75px;
   height: 75px;
 }
