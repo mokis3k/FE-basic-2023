@@ -7,11 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fonts/font.css">
-    <title>Main</title>
+    <title>Registration</title>
 </head>
 
 <body>
-    <div class="intro"></div>
+    <div class="intro">
+        <header>
+            <nav class="intro-nav">
+                <a href="index.html">registration</a>
+                <a href="./pages/login.html">log in</a>
+                <a href="./pages/search.html">search</a>
+            </nav>
+        </header>
+        <div class="registration-wrapper">
+            <h1 class="form-title">Registration</h1>
+            <form class="form" action="https://fom.in.ua/echo" method="post" target="_blank">
+                <input type="text" name="name" placeholder="Name" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="password" name="password" placeholder="Create password" required><br>
+                <input type="password" name="repeatedPassword" placeholder="Repeat password" required><br>
+                <button>Continue</button>
+            </form>
+        </div>
+
+    </div>
 </body>
 
 </html>
