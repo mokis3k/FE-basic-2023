@@ -2,76 +2,149 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../fonts/font.css">
-    <title>Search</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/search_style.css">
+   <link rel="stylesheet" href="../fonts/font.css">
+   <title>Search</title>
 </head>
 
 <body>
-    <div class="intro">
-        <header>
-            <nav class="intro-nav">
-                <a href="../index.html">registration</a>
-                <a href="login.html">log in</a>
-                <a href="search.html">search</a>
-            </nav>
-        </header>
-        <div class="search-wrapper">
-            <h1 class="form-title">Search</h1>
-            <form class="form" action="https://fom.in.ua/echo" method="post" target="_blank">
-                <label>
-                    <span>Body type</span>
-                    <select class="body-select" name="bodyType" size="6">
-                        <option class="body-option" value="kia">Kia</option>
-                        <option class="body-option" value="volvo">Volvo</option>
-                        <option class="body-option" value="bmw">BMW</option>
-                        <option class="body-option" value="mercedes">Mercedes</option>
-                        <option class="body-option" value="nissan">Nissan</option>
-                        <option class="body-option" value="skoda">Skoda</option>
-                    </select>
-                </label>
-                <label>
-                    <span>Brand</span>
-                    <input>
-                </label>
-                <label>
-                    <span>Country</span>
-                    <input>
-                </label>
-                <label>
-                    <span>Price</span>
-                    <input>
-                </label>
-                <label>
-                    <span>Year</span>
-                    <input>
-                </label>
-                <label>
-                    <span>Condition</span>
-                    <input>
-                </label>
-                <label>
-                    <span>Fuel type</span>
-                    <input>
-                </label>
-                <label>
-                    <span>Gearbox</span>
-                    <input>
-                </label>
-                <label>
-                    <span>Color</span>
-                    <input>
-                </label>
-                <label>
-                    <span>Comfort</span>
-                    <input>
-                </label>
-            </form>
-        </div>
-    </div>
+   <div class="intro">
+      <header>
+         <nav class="intro-nav">
+            <a href="../index.html">registration</a>
+            <a href="login.html">log in</a>
+            <a href="search.html">search</a>
+         </nav>
+      </header>
+      <div class="search-wrapper">
+         <h1 class="search-title">Search</h1>
+         <form class="search-form" action="https://fom.in.ua/echo" method="post" target="_blank">
+            <div class="content">
+               <div class="column1">
+                  <p>
+                     <label>
+                        <span>Brand</span>
+                        <select name="carBrand">
+                           <option value="0" selected disabled>None</option>
+                           <option value="kia">Kia</option>
+                           <option value="bmw">BMW</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="mercedes">Mercedes</option>
+                           <option value="ford">Ford</option>
+                        </select>
+                     </label>
+                  </p>
+                  <p>
+                     <span>Country</span><br>
+                     <label>
+                        <input type="checkbox" name="country" value="usa">
+                        <span>USA</span>
+                     </label><br>
+                     <label>
+                        <input type="checkbox" name="country" value="germany">
+                        <span>Germany</span>
+                     </label><br>
+                     <label>
+                        <input type="checkbox" name="country" value="japan">
+                        <span>Japan</span>
+                     </label>
+                  </p>
+                  <p>
+                     <label>
+                        <span>Body type</span>
+                        <select name="bodyType">
+                           <option value="0" selected disabled>None</option>
+                           <option value="coupe">Coupe</option>
+                           <option value="sedan">Sedan</option>
+                           <option value="crossover">Crossover</option>
+                        </select>
+                     </label>
+                  </p>
+                  <p>
+                     <label>
+                        <span>Year</span>
+                        <input type="number" name="year" min="1995" max="2022" step="1" value="2015">
+                     </label>
+                  </p>
+                  <p>
+                     <span>Condition</span><br>
+                     <label>
+                        <input type="radio" name="cond" value="new">
+                        <span>New</span>
+                     </label><br>
+                     <label>
+                        <input type="radio" name="cond" value="used">
+                        <span>Used</span>
+                     </label><br>
+                     <label>
+                        <input type="radio" name="cond" value="beated">
+                        <span>Beated</span>
+                     </label>
+                  </p>
+               </div>
+               <div class="column2">
+                  <p>
+                     <label>
+                        <span>Price</span>
+                        <input type="number" name="price" min="2000" max="50000" step="500" value="15000">
+                     </label>
+                  </p>
+                  <p>
+                     <span>Fuel type</span><br>
+                     <label>
+                        <input type="checkbox" name="fuel" value="diesel">
+                        <span>Diesel</span>
+                     </label><br>
+                     <label>
+                        <input type="checkbox" name="fuel" value="petrol">
+                        <span>Petrol</span>
+                     </label><br>
+                     <label>
+                        <input type="checkbox" name="fuel" value="gasoline">
+                        <span>Gasoline</span>
+                     </label>
+                  </p>
+                  <p>
+                     <label>
+                        <span>Transmission</span>
+                        <select name="transmissionType">
+                           <option value="0" selected disabled>None</option>
+                           <option value="automatic">Automatic</option>
+                           <option value="manual">Manual</option>
+                           <option value="automated manual">AM</option>
+                        </select>
+                     </label>
+                  </p>
+                  <p>
+                     <label>
+                        <span>Color</span>
+                        <input type="color" name="color">
+                     </label>
+                  </p>
+                  <p>
+                     <label>
+                        <span>Comfort</span>
+                        <select name="comfort" multiple>
+                           <option value="0" selected>None</option>
+                           <option value="a/c">Air Condition</option>
+                           <option value="airbags">Airbags</option>
+                           <option value="multimedia">Multimedia</option>
+                           <option value="sunroof">Sunroof</option>
+                           <option value="heated seats">Heated seats</option>
+                           <option value="cruise control">Cruise Control</option>
+                           <option value="lens headlight">Lens headlights</option>
+                        </select>
+                     </label>
+                  </p>
+               </div>
+            </div>
+            <button>Continue</button>
+         </form>
+      </div>
+   </div>
 </body>
 
 </html>

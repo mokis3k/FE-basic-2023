@@ -66,40 +66,49 @@ html {
   color: #305454;
 }
 
-/* forms */
+/* search-form */
 
-.form-title {
-  text-align: center;
-  margin: 50px 0;
-  font-weight: 400;
-}
-
-.form {
+.search-form {
   width: 100%;
   height: auto;
+  max-height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.form > input {
-  margin: auto;
-  padding: 5px;
+.search-wrapper {
   width: 100%;
-  max-width: 250px;
-  height: 35px;
-
-  color: #000;
-  font-family: inherit;
-  line-height: 1.5;
-
-  border: none;
-  border-radius: 5px;
-  outline: none;
+  max-width: 700px;
+  height: 100%;
+  max-height: 450px;
+  background-color: rgb(127, 163, 163, 0.9);
+  margin: 50px auto;
 }
 
-.form > button {
+.search-title {
+  text-align: center;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.column1, .column2 {
+  width: 50%;
+  padding-left: 10%;
+}
+
+.column1 > p, .column2 > p  {
+  margin-bottom: 10px;
+}
+
+.search-form > button {
   margin: auto;
+  margin-top: 10px;
   width: 100%;
   max-width: 200px;
   height: 35px;
@@ -116,52 +125,17 @@ html {
   transition-duration: 0.2s;
 }
 
-.form > button:hover {
+.search-form > button:hover {
   background-color: #305454;
   color: #fff;
 }
 
-/* registration */
-
-.registration-wrapper {
-  width: 100%;
-  max-width: 500px;
-  height: 100%;
-  max-height: 450px;
-  background-color: rgb(127, 163, 163, 0.9);
-  margin: 50px auto;
-}
-
-/* login */
-
-.login-wrapper {
-  width: 100%;
-  max-width: 500px;
-  height: 100%;
-  max-height: 400px;
-  background-color: rgb(127, 163, 163, 0.9);
-  margin: 50px auto;
-}
-
-.remember-me {
-  margin: 0 auto 20px auto;
-}
-
-/* search */
-
-.search-wrapper {
-  width: 100%;
-  max-width: 700px;
-  height: 100%;
-  max-height: 450px;
-  background-color: rgb(127, 163, 163, 0.9);
-  margin: 50px auto;
-}
-
-.search-wrapper .form {
-  columns: 2;
-}
-
-.body-option {
+input,
+select,
+option {
   color: #305454;
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  padding-left: 3px;
 }
