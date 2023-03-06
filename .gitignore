@@ -1,0 +1,26 @@
+# Logs
+/logs
+*.log
+npm-debug.log*
+
+# Mac files
+.DS_Store
+
+# Dependency directories
+/node_modules
+
+# lerna files
+/lerna-debug.log
+
+# Lock files
+/package-lock.json
+/yarn.lock
+
+# IDE / Editor
+.idea
+.vscode
+
+# dotenv environment variables file
+.env
+/web/.env.development
+/web/.env.production
