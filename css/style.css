@@ -3,9 +3,6 @@
 .first-section {
   background-color: var(--color-gray);
   height: 700px;
-}
-
-.nav {
   padding-top: 79px;
 }
 
@@ -15,7 +12,6 @@
 
 .nav-item {
   text-transform: uppercase;
-  line-height: 26px;
   font-weight: 500;
 }
 
