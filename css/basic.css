@@ -32,6 +32,11 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  .py-auto {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
   
   .hidden {
     display: none !important;
