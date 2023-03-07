@@ -1,9 +1,14 @@
 @import url(./basic.css);
 
+.header {
+  padding-top: 79px;
+  background-color: var(--color-gray);
+}
+
 .first-section {
   background-color: var(--color-gray);
   height: 700px;
-  padding-top: 79px;
+  padding-top: 151px;
 }
 
 .nav-active {
@@ -20,14 +25,12 @@
 }
 
 .title {
-  margin-top: 150px;
-
   font-size: 48px;
   font-weight: 500;
-  margin-bottom: 60px;
 }
 
 .first-section-description {
+  margin-top: 60px;
   max-width: 540px;
   color: var(--txt-gray);
 }
@@ -50,6 +53,11 @@
 }
 
 /*---------------------------------------*/
+
+.about-section {
+  padding-top: 112px;
+  padding-bottom: 100;
+}
 
 .about-title {
   text-align: center;
