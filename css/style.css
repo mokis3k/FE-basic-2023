@@ -27,10 +27,10 @@
 .title {
   font-size: 48px;
   font-weight: 500;
+  margin-bottom: 60px;
 }
 
 .first-section-description {
-  margin-top: 60px;
   max-width: 540px;
   color: var(--txt-gray);
 }
@@ -57,19 +57,6 @@
 .about-section {
   padding-top: 112px;
   padding-bottom: 100;
-}
-
-.about-title {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 50px;
-}
-
-.about-description {
-  max-width: 540px;
-  color: var(--txt-gray);
-  text-align: center;
 }
 
 /*---------------------------------------*/
@@ -107,25 +94,10 @@
   background-color: var(--color-gray);
 }
 
-.work-title {
-  margin-bottom: 50px;
-
-  font-size: 32px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.work-description {
-  margin-bottom: 57px;
-  max-width: 540px;
-
-  text-align: center;
-  color: var(--txt-gray);
-}
-
 .work-video {
+  margin-top: 57px;
+  aspect-ratio: 16/9;
   width: 100%;
-  height: 600px;
 }
 
 /*---------------------------------------*/
