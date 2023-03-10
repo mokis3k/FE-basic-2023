@@ -1,0 +1,94 @@
+@import url(./basic.css);
+
+.nav {
+  background-color: var(--nav-color);
+  color: var(--txt-color);
+  border-bottom: 4px solid #009fff;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  padding: 15px;
+
+  position: relative;
+}
+
+.nav-item + .nav-item {
+  margin-left: 30px;
+}
+
+.nav-item:hover {
+  background-color: var(--hover-color);
+  color: #fff;
+}
+
+/*--------------------------------------*/
+
+.nav-item-list {
+  text-transform: capitalize;
+  background-color: var(--blue-color);
+  list-style-type: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  display: none;
+}
+
+.nav-item:hover .nav-item-list {
+  display: initial;
+}
+
+.element {
+  padding: 15px 80px 15px 10px;
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
+
+  position: relative;
+}
+
+.element::after {
+  content: "+";
+
+  position: absolute;
+  right: 10px;
+}
+
+.element:hover {
+  background-color: var(--hover-color);
+}
+
+/*--------------------------------------*/
+
+.element-list {
+  text-transform: capitalize;
+  background-color: var(--blue-color);
+  list-style-type: none;
+
+  position: absolute;
+  left: 100%;
+  top: 0;
+
+  display: none;
+}
+
+.element:hover .element-list {
+  display: initial;
+}
+
+.sub-element {
+  padding: 15px 90px 15px 10px;
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.sub-element:hover {
+  background-color: var(--hover-color);
+}
