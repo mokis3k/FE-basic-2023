@@ -14,9 +14,16 @@
 
 .nav-item {
   text-transform: uppercase;
-  padding: 15px;
+  padding: 15px 20px;
 
   position: relative;
+}
+
+.parent::after {
+  content: "+";
+
+  position: absolute;
+  right: 5px;
 }
 
 .nav-item + .nav-item {
