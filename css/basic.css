@@ -41,6 +41,15 @@ html {
   margin-left: auto;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul li:hover {
+  background-color: var(--hover-color);
+  color: #fff;
+}
+
 .hidden {
   display: none !important;
 }
