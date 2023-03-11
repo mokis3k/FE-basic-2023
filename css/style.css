@@ -7,8 +7,7 @@
 
 .first-section {
   background-color: var(--color-gray);
-  height: 700px;
-  padding-top: 151px;
+  padding: 151px 0;
 }
 
 .nav-active {
@@ -56,7 +55,6 @@
 
 .about-section {
   padding-top: 112px;
-  padding-bottom: 100;
 }
 
 /*---------------------------------------*/

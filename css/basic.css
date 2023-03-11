@@ -39,11 +39,6 @@ html {
   margin-left: auto;
 }
 
-.py-auto {
-  padding-top: auto;
-  padding-bottom: auto;
-}
-
 .py-100px {
   padding-top: 100px;
   padding-bottom: 100px;
