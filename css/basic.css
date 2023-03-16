@@ -1,3 +1,12 @@
+:root {
+  --bg-color: #F5F5F5;
+  --bg-dark-gay: #E3EBF1;
+  --bg-light-gray: #F7F9FA;
+  --green-color: #17A550;
+  --black-color: #1D2F38;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,22 +24,37 @@ img {
 }
 
 html {
-  font-family: "Montserrat", "sans-serif";
-  font-size: 16px;
+  font-family: "Raleway", "sans-serif";
+  font-size: 14px;
   font-weight: 400;
 }
 
 .container {
-  min-width: 1140px;
-  margin-left: auto;
+  max-width: 1150px;
   margin-right: auto;
-  padding-left: 1rem;
+  margin-left: auto;
   padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .mgx-auto {
   margin-right: auto;
   margin-left: auto;
+}
+
+.pdy15px {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.mgy-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }
 
 .hidden {

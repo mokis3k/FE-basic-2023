@@ -1,11 +1,17 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url("./Montserrat-Regular.woff2") format("woff2");
+    font-family: "Bitter";
+    src: url("./Bitter-Regular.woff2") format("woff2");
     font-weight: 400;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("./Montserrat-Bold.woff2") format("woff2");
+    font-family: "Raleway";
+    src: url("./Raleway-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./Raleway-Bold.woff2") format("woff2");
     font-weight: 700;
 }

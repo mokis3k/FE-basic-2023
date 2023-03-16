@@ -1,0 +1,23 @@
+@import url(./basic.css);
+
+.header {
+  box-shadow: 0px 1px 8px rgba(83, 109, 122, 0.29);
+}
+
+.header .container {
+  justify-content: space-between;
+}
+
+.nav {
+  gap: 40px;
+}
+
+.sign-up {
+  gap: 12px;
+}
+
+.nav-item {
+  gap: 6px;
+}
+
+/*--------------------------------------*/
