@@ -4,12 +4,17 @@
   --bg-light-gray: #f7f9fa;
   --color-green: #17a550;
   --black-color: #1d2f38;
+  --ff-bitter: "Bitter";
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  border-color: var(--bg-color);
 }
 
 a,
@@ -26,6 +31,7 @@ html {
   font-family: "Raleway", "sans-serif";
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .container {

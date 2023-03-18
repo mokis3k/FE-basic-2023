@@ -3,6 +3,9 @@
 .flex {
   display: flex;
 }
+.flex-column {
+  flex-direction: column;
+}
 .justify-center {
   justify-content: center;
 }
@@ -14,6 +17,9 @@
 }
 .align-center {
   align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 .bold {
   font-weight: 700;
@@ -33,6 +39,13 @@
 .btn.btn-default:hover {
   background-color: var(--bg-light-gray);
   color: var(--color-green);
+}
+.ff-bitter {
+  font-family: var(--ff-bitter);
+}
+.view-more {
+  margin-top: 74px;
+  gap: 4px;
 }
 
 /*---header-----------------------------------*/
@@ -68,19 +81,62 @@
 }
 .intro .section-title {
   color: var(--color-green);
-  font-weight: 400;
   font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 400;
   margin-bottom: 8px;
 }
 .intro .section-description {
-  font-family: "Bitter";
   font-size: 3.3rem;
   margin-bottom: 22px;
+  line-height: 3.6rem;
 }
 .intro .section-about {
   font-size: 1.2rem;
   margin-bottom: 25px;
+  line-height: 1.6rem;
 }
 .intro .btn {
   padding: 15px;
+}
+
+/*---blog-section-----------------------------------*/
+
+.blog .section-title {
+  font-size: 2.7rem;
+  line-height: 2rem;
+  font-weight: 400;
+
+  padding-top: 77px;
+  padding-bottom: 33px;
+}
+.blog .content {
+  gap: 40px;
+}
+.content-right {
+  gap: 11px;
+}
+.content-right .img {
+  max-width: 555px;
+}
+.blog .section-description {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+.blog .section-about {
+  font-size: 1.1rem;
+}
+.content-left {
+  gap: 20px;
+}
+.content-left .img {
+  max-width: 245px;
+}
+.blog-item {
+  gap: 15px;
+}
+.blog-item-description {
+  font-size: 1.25rem;
+  line-height: 1.3rem;
 }
