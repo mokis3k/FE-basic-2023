@@ -40,7 +40,7 @@
 .btn.btn-default {
   background-color: var(--color-green);
 
-  color: #fff;
+  color: var(--color-white);
   font-size: 15px;
   line-height: 22px;
 }
@@ -124,8 +124,11 @@
 .blog .content {
   gap: 40px;
 }
-.content-right {
+.blog .content-left {
   gap: 11px;
+}
+.blog .content-left .img {
+  max-width: 555px;
 }
 .blog .section-about {
   font-size: 30px;
@@ -135,8 +138,13 @@
   font-size: 15px;
   line-height: 20px;
 }
-.content-left {
+.blog .content-right {
   gap: 20px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.blog .content-right .img {
+  max-width: 245px;
 }
 .blog-item {
   gap: 15px;
@@ -181,18 +189,25 @@
   margin-bottom: 33px;
 }
 .reviews .content {
+  flex-wrap: wrap;
   margin-bottom: 40px;
   gap: 40px;
 }
 .reviews .card {
   background-color: var(--bg-light-gray);
   border-radius: 10px;
+  max-width: calc(calc(100% / 3) - 27px);
 
   position: relative;
 }
+.reviews .img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+}
 .reviews .card-about {
   font-size: 12px;
-  color: #ffffff;
+  color: var(--color-white);
   background: rgba(29, 47, 56, 0.8);
 
   padding: 5px 10px;
@@ -200,19 +215,16 @@
   top: 15px;
   left: 15px;
 }
-.reviews .card .card-title {
+.reviews .card-title {
   font-size: 30px;
   line-height: 35px;
 
   margin: 24px 25px 13px;
 }
-.reviews .card .card-description {
+.reviews .card-description {
   font-size: 15px;
 
   margin: 0 25px 39px;
-}
-.blog .view-more {
-  margin-top: 40px;
 }
 
 /*---newsletter-section-----------------------------------*/
@@ -253,24 +265,20 @@
   gap: 10px;
 }
 .newsletter .btn {
-  background-color: #ffc728;
-  color: #000000;
+  background-color: var(--color-yellow);
+  color: var(--black-color);
   padding: 15px 19px;
 }
 .newsletter .btn:hover {
   background-color: var(--bg-light-gray);
-  color: #ffc728;
+  color: var(--color-yellow);
 }
-.newletter .policy {
-  color: #536d7a;
+.newsletter .policy {
+  color: var(--txt-light);
   font-size: 12px;
 }
 
-/* change div -> form */
-/* aspect-ratio */
-/* cards text wrap */
-
-/*---footer-section-----------------------------------*/
+/*---footer-----------------------------------*/
 
 .footer {
   background-color: var(--bg-light-gray);
@@ -283,8 +291,9 @@
 
 .footer .up-line {
   gap: 60px;
+  margin-bottom: 80px;
 }
-.footer .content {
+.footer .up-line .content {
   flex: 1;
   gap: 15px;
 }
@@ -295,7 +304,6 @@
   font-size: 16px;
 }
 .footer .section-title {
-  color: #333333;
   font-size: 30px;
   line-height: 35px;
 }
@@ -318,6 +326,24 @@
   flex: 1;
   gap: 20px;
 }
+.browse .input {
+  border: var(--input-border);
+  border-radius: 5px 0px 0px 5px;
+
+  width: 75%;
+  height: 48px;
+  position: relative;
+}
+.browse .btn {
+  color: var(--color-white);
+  background-color: #768f9c;
+  font-size: 12px;
+  border-radius: 0px 5px 5px 0px;
+
+  padding: 14px 20px;
+  height: 48px;
+  position: absolute;
+}
 .footer .browse-list {
   font-size: 16px;
 }
@@ -329,3 +355,15 @@
 }
 
 /*---footer-down-line-section-----------------------------------*/
+
+.footer .down-line .content {
+  margin-top: 22px;
+}
+.footer .content-left {
+  gap: 10px;
+}
+.footer .content-right {
+  gap: 4px;
+}
+
+/* cahnge pngs on jpgs */

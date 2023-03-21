@@ -3,6 +3,8 @@
   --bg-dark-gray: #e3ebf1;
   --bg-light-gray: #f7f9fa;
   --color-green: #17a550;
+  --color-yellow: #ffc728;
+  --color-white: #ffffff;
   --black-color: #1d2f38;
   --txt-light: #536D7A;
   --input-border: 1px solid #aabcc5;
@@ -42,6 +44,7 @@ html {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  color: var(--black-color)
 }
 
 .container {
