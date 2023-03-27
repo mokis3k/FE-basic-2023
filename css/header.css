@@ -1,0 +1,28 @@
+.header {
+  padding: 50px 60px 0 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.page {
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--color-main-regular);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot-separator {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-grey-separator);
+  border-radius: 50%;
+}
