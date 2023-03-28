@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./fonts/font.css">
     <title>Document</title>
 </head>
@@ -15,7 +16,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <svg width="130" height="61" viewBox="0 0 130 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="130" height="60" viewBox="0 0 130 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M4.95672 0H0V35.7986H4.95672V22.5177C4.95672 20.2709 5.51557 18.4984 6.63326 17.2502C7.75095 16.002 9.2817 15.353 11.1769 15.353C12.8049 15.353 14.1655 15.9521 15.2589 17.1004C16.3523 18.2738 16.9112 19.7466 16.9112 21.5191V35.8236H21.8922V21.5191C21.8922 18.2238 20.9932 15.6276 19.1951 13.6804C17.3971 11.7332 15.0402 10.7596 12.1731 10.7596C11.347 10.7596 10.5209 10.8594 9.71906 11.0841C8.89294 11.3088 8.2369 11.5584 7.70235 11.833C7.16781 12.1076 6.65756 12.4072 6.1959 12.7567C5.73424 13.1062 5.41838 13.3558 5.27259 13.5056C5.1268 13.6554 5.00532 13.7552 4.95672 13.8301V0Z"
                         fill="#F0145A" />
@@ -68,15 +69,16 @@
             </div>
             <div class="info">
                 <div>
-                    <span class="lang" lang="uk">УК</span>
-                    <span class="lang" lang="ru">РУ</span>
-                    <span class="lang active">EN</span>
+                    <a href="#"><span class="lang" lang="uk">УК</span></a>
+                    <a href="#"><span class="lang" lang="ru">РУ</span></a>
+                    <a href="#"><span class="lang active">EN</span></a>
                 </div>
                 <span class="dot-separator"></span>
-                <a href="https://www.google.com/maps/place/BAO/@50.4370215,30.5305854,18z/data=!4m10!1m2!2m1!1sKyiv,+Mechnikova+str,+14%2F1!3m6!1s0x40d4cf072c51c1df:0x367ea59ccf0efcc4!8m2!3d50.4370215!4d30.5326453!15sChpLeWl2LCBNZWNobmlrb3ZhIHN0ciwgMTQvMVoaIhhreWl2IG1lY2huaWtvdmEgc3RyIDE0IDGSAQ1tZWFsX2RlbGl2ZXJ5mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVI1YVhKNlRuUlJSUkFC4AEA!16s%2Fg%2F11cm3tsnsh"
-                    target="_blank" class="address">Kyiv, Mechnikova str, 14/1</a>
+                <a class="address"
+                    href="https://www.google.com/maps/place/BAO/@50.4370215,30.5305854,18z/data=!4m10!1m2!2m1!1sKyiv,+Mechnikova+str,+14%2F1!3m6!1s0x40d4cf072c51c1df:0x367ea59ccf0efcc4!8m2!3d50.4370215!4d30.5326453!15sChpLeWl2LCBNZWNobmlrb3ZhIHN0ciwgMTQvMVoaIhhreWl2IG1lY2huaWtvdmEgc3RyIDE0IDGSAQ1tZWFsX2RlbGl2ZXJ5mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVI1YVhKNlRuUlJSUkFC4AEA!16s%2Fg%2F11cm3tsnsh"
+                    target="_blank">Kyiv, Mechnikova str, 14/1</a>
                 <span class="dot-separator"></span>
-                <a href="tel:+380800211927">0800 211 927</a>
+                <a class="phone" href="tel:+380800211927">0800 211 927</a>
                 <span class="dot-separator"></span>
                 <a class="fb-header" href="https://www.facebook.com/Hillel.IT.School/?mibextid=LQQJ4d"
                     target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -96,6 +98,31 @@
             </nav>
         </div>
     </header>
+    <div class="content"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="address">
+                <span class="address-name">Kyiv, Mechnikova str, 14/1</span>
+                <span class="dot-separator"></span>
+                <a class="address-link"
+                    href="https://www.google.com/maps/place/BAO/@50.4370215,30.5305854,18z/data=!4m10!1m2!2m1!1sKyiv,+Mechnikova+str,+14%2F1!3m6!1s0x40d4cf072c51c1df:0x367ea59ccf0efcc4!8m2!3d50.4370215!4d30.5326453!15sChpLeWl2LCBNZWNobmlrb3ZhIHN0ciwgMTQvMVoaIhhreWl2IG1lY2huaWtvdmEgc3RyIDE0IDGSAQ1tZWFsX2RlbGl2ZXJ5mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVI1YVhKNlRuUlJSUkFC4AEA!16s%2Fg%2F11cm3tsnsh">On
+                    map</a>
+            </div>
+            <span class="rights">© 2021 HLEGAL Law company, LLC</span>
+            <div class="info">
+                <a class="fb-footer" target="_blank" href="https://www.facebook.com/Hillel.IT.School/?mibextid=LQQJ4d"><svg width="38"
+                        height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                            fill="#24A3FF" />
+                    </svg></a>
+                <span class="dot-separator"></span>
+                <a class="phone" href="tel:+380800211927">0800 211 927</a>
+                <span class="dot-separator"></span>
+                <a class="contact" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

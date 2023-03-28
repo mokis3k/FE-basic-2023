@@ -1,0 +1,59 @@
+.content {
+  height: 900px;
+}
+
+.footer {
+  background-color: var(--color-grey-bg);
+  padding: 30px 60px;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  row-gap: 21px;
+}
+
+.footer .address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .address-name {
+  color: var(--color-main-regular);
+}
+
+.address-link {
+  font-weight: var(--txt-bold);
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.footer .rights {
+  color: var(--color-grey-text);
+}
+
+.footer .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fb-footer:hover svg path {
+    fill: var(--color-accent)
+}
+
+.footer .phone {
+  color: var(--color-main-regular);
+  font-weight: var(--txt-bold);
+}
+
+.footer .contact {
+  font-weight: var(--txt-bold);
+}
+
+.footer .contact:hover {
+    color: var(--color-accent)
+}
