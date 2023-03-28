@@ -38,6 +38,7 @@
     #ef8080 99.96%
   );
   --color-black: #000000;
+  --color-white: #FFFFFF;
   --txt-bold: 700;
   --txt-regular: 400;
 }
@@ -134,6 +135,13 @@ a:hover {
   margin-right: auto;
   margin-left: auto;
 } */
+
+.dot-separator {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-grey-separator);
+  border-radius: 50%;
+}
 
 .hidden {
   display: none !important;
