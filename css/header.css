@@ -3,39 +3,43 @@
 }
 
 .header .container {
-  display: grid;
   grid-template-columns: auto auto;
-  justify-content: space-between;
   row-gap: 16px;
 }
 
 .header .logo {
-  display: flex;
-  align-items: flex-start;
-  gap: 4px;
   grid-row: 1 / span 2;
+  position: relative;
+}
+
+.header .slash {
+  position: absolute;
+  left: 103%;
+  top: 9%;
 }
 
 .logo .page {
   font-size: 36px;
   line-height: 44px;
   color: var(--color-main-regular);
+
+  position: absolute;
+  left: 122%;
+  top: 10%;
 }
 
 .header .info {
-  display: flex;
-  align-items: center;
   gap: 6px;
-  justify-self: end;
 }
 
 .lang {
   font-weight: var(--txt-bold);
   font-size: 12px;
   line-height: 14.63px;
+  color: var(--color-grey-text);
+
   padding: 5px 7px;
   border-radius: 8px;
-  color: var(--color-grey-text);
 }
 
 .lang:hover {
@@ -60,7 +64,6 @@
 
 .nav {
   font-weight: var(--txt-bold);
-  display: flex;
   gap: 15px;
   grid-column: 2;
   grid-row: 2;

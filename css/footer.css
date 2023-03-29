@@ -4,19 +4,15 @@
 
 .footer {
   background-color: var(--color-grey-bg);
-  padding: 30px 60px;
+  padding: 30px 0;
 }
 
 .footer .container {
-  display: grid;
   grid-template-columns: auto auto;
-  justify-content: space-between;
   row-gap: 21px;
 }
 
 .footer .address {
-  display: flex;
-  align-items: center;
   gap: 10px;
 }
 
@@ -36,13 +32,11 @@
 }
 
 .footer .info {
-  display: flex;
-  align-items: center;
   gap: 10px;
 }
 
 .fb-footer:hover svg path {
-    fill: var(--color-accent)
+  fill: var(--color-accent);
 }
 
 .footer .phone {
@@ -55,5 +49,5 @@
 }
 
 .footer .contact:hover {
-    color: var(--color-accent)
+  color: var(--color-accent);
 }
