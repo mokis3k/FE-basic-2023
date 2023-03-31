@@ -16,7 +16,7 @@
     .members {
       grid-template-columns: repeat(2, 1fr);
     }
-    .header .wrapper {
+    .header .container {
         grid-template-columns: initial;
     }
     .header .info {

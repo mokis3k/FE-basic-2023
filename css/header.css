@@ -2,7 +2,7 @@
   padding-top: 50px;
 }
 
-.header .wrapper {
+.header .container {
   grid-template-columns: auto auto;
   row-gap: 16px;
 }
