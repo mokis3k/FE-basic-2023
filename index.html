@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/basic.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/team.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./fonts/font.css">
     <title>Document</title>
 </head>
@@ -18,7 +17,7 @@
     <header class="header">
         <div class="container grid justify-between">
             <div class="logo flex align-center">
-                <svg width="130" height="60" viewBox="0 0 130 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="./index.html"><svg width="130" height="60" viewBox="0 0 130 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M4.95672 0H0V35.7986H4.95672V22.5177C4.95672 20.2709 5.51557 18.4984 6.63326 17.2502C7.75095 16.002 9.2817 15.353 11.1769 15.353C12.8049 15.353 14.1655 15.9521 15.2589 17.1004C16.3523 18.2738 16.9112 19.7466 16.9112 21.5191V35.8236H21.8922V21.5191C21.8922 18.2238 20.9932 15.6276 19.1951 13.6804C17.3971 11.7332 15.0402 10.7596 12.1731 10.7596C11.347 10.7596 10.5209 10.8594 9.71906 11.0841C8.89294 11.3088 8.2369 11.5584 7.70235 11.833C7.16781 12.1076 6.65756 12.4072 6.1959 12.7567C5.73424 13.1062 5.41838 13.3558 5.27259 13.5056C5.1268 13.6554 5.00532 13.7552 4.95672 13.8301V0Z"
                         fill="#F0145A" />
@@ -61,19 +60,30 @@
                     <path
                         d="M127.315 57.5803V60.0283H125.716V57.5605L123.041 53.1185H124.739L126.585 56.1884L128.43 53.1185H130L127.315 57.5803Z"
                         fill="#323264" />
-                </svg>
+                </svg></a>
                 <svg class="slash" width="21" height="47" viewBox="0 0 21 47" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1752 0H21L5.82482 47H0L15.1752 0Z"
                         fill="#F0145A" />
                 </svg>
-                <span class="page">team</span>
+                <span class="page">about us</span>
             </div>
             <div class="info flex align-center">
                 <div>
-                    <a href="#"><span class="lang" lang="uk">УК</span></a>
-                    <a href="#"><span class="lang" lang="ru">РУ</span></a>
-                    <a href="#"><span class="lang active">EN</span></a>
+                    <form>
+                        <label>
+                            <input class="lang-check" type="radio" name="lang" value="en" id="ukr">
+                            <span class="lang" lang="uk">УК</span>
+                        </label>
+                        <label>
+                            <input class="lang-check" type="radio" name="lang" value="en" id="ru">
+                            <span class="lang" lang="uk">РУ</span>
+                        </label>
+                        <label>
+                            <input class="lang-check" type="radio" name="lang" value="en" id="en">
+                            <span class="lang active" lang="uk">EN</span>
+                        </label>
+                    </form>
                 </div>
                 <span class="dot-separator"></span>
                 <a class="address"
@@ -94,86 +104,13 @@
             <nav class="nav flex">
                 <a class="nav-item active" href="#">about us</a>
                 <a class="nav-item" href="#">services</a>
-                <a class="nav-item" href="#">team</a>
+                <a class="nav-item" href="./pages/teams.html">team</a>
                 <a class="nav-item" href="#">publications</a>
                 <a class="nav-item" href="#">contact</a>
             </nav>
         </div>
     </header>
-    <section class="team">
-        <div class="container">
-            <h1 class="team-title mgy-auto">We are used to taking responsibility and always guarantee honest, timely
-                assistance, even in situations
-                where most are powerless.</h1>
-            <div class="members grid">
-                <div class="card">
-                    <img src="./images/Team-1.jpg" alt="Team-member-1">
-                    <div class="card-content grid">
-                        <h4 class="card-title">Alexander Alexandrovsky</h4>
-                        <a href="#" class="arrow-button flex align-center"><svg width="10" height="17"
-                                viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.5 15.5L8.5 8.5L1.5 1.5" stroke="#24A3FF" stroke-width="2" />
-                            </svg></a>
-                        <p class="card-description">Managing partner</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/Team-2.jpg" alt="Team-member-1">
-                    <div class="card-content grid">
-                        <h4 class="card-title">Evgeny Patrikov</h4>
-                        <a href="#" class="arrow-button flex align-center"><svg width="10" height="17"
-                                viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.5 15.5L8.5 8.5L1.5 1.5" stroke="#24A3FF" stroke-width="2" />
-                            </svg></a>
-                        <p class="card-description">Equity partner, Attorney-at-law</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/Team-3.jpg" alt="Team-member-1">
-                    <div class="card-content grid">
-                        <h4 class="card-title">Vladislav Melnik</h4>
-                        <a href="#" class="arrow-button flex align-center"><svg width="10" height="17"
-                                viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.5 15.5L8.5 8.5L1.5 1.5" stroke="#24A3FF" stroke-width="2" />
-                            </svg></a>
-                        <p class="card-description">Associate</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/Team-4.jpg" alt="Team-member-1">
-                    <div class="card-content grid">
-                        <h4 class="card-title">Sergey Binn</h4>
-                        <a href="#" class="arrow-button flex align-center"><svg width="10" height="17"
-                                viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.5 15.5L8.5 8.5L1.5 1.5" stroke="#24A3FF" stroke-width="2" />
-                            </svg></a>
-                        <p class="card-description">Associater</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/Team-5.jpg" alt="Team-member-1">
-                    <div class="card-content grid">
-                        <h4 class="card-title">Oksana Kobzar</h4>
-                        <a href="#" class="arrow-button flex align-center"><svg width="10" height="17"
-                                viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.5 15.5L8.5 8.5L1.5 1.5" stroke="#24A3FF" stroke-width="2" />
-                            </svg></a>
-                        <p class="card-description">Equity partner, Attorney-at-law</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/Team-6.jpg" alt="Team-member-1">
-                    <div class="card-content grid">
-                        <h4 class="card-title">Julia Wolk</h4>
-                        <a href="#" class="arrow-button flex align-center"><svg width="10" height="17"
-                                viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.5 15.5L8.5 8.5L1.5 1.5" stroke="#24A3FF" stroke-width="2" />
-                            </svg></a>
-                        <p class="card-description">Associate, Attorney-at-law</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section>
     </section>
     <footer class="footer">
         <div class="container grid justify-between">
