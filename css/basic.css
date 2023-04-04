@@ -172,6 +172,10 @@ img {
   display: grid;
 }
 
+.grid-2-columns {
+  grid-template-columns: auto auto;
+}
+
 .hidden {
   display: none !important;
 }
