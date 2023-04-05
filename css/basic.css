@@ -47,6 +47,8 @@
   --container-tablet-hd: 1024px;
   --container-tablet-sd: 768px;
   --container-mobile: 360px;
+
+  --basic-space: 15px;
 }
 
 * {

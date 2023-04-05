@@ -3,18 +3,22 @@
 }
 
 .header .container {
-  row-gap: 16px;
+  row-gap: var(--basic-space);
 }
 
 .header .logo {
   grid-area: 1 / 1 / span 2;
   gap: 4px;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.logo-assets {
+  padding-top: calc(1.4 * var(--basic-space));
 }
 
 .logo .page {
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 2.25rem;
+  line-height: 1.7rem;
   color: var(--color-main-regular);
 }
 
@@ -24,8 +28,8 @@
 
 .lang {
   font-weight: var(--txt-bold);
-  font-size: 12px;
-  line-height: 14.63px;
+  font-size: 0.75rem;
+  line-height: 0.6rem;
   color: var(--color-grey-text);
 
   padding: 5px 7px;
@@ -47,13 +51,17 @@
 
 .header .address {
   color: var(--color-grey-text);
-  line-height: 19.5px;
+  line-height: 0.7rem;
 }
 
 .header .phone {
   font-weight: var(--txt-bold);
-  line-height: 20px;
+  line-height: 0.7rem;
   color: var(--color-grey-text);
+}
+
+.fb-header:hover svg path {
+  fill: var(--color-accent);
 }
 
 /* nav-bar */
@@ -70,8 +78,8 @@
   display: none;
 
   grid-area: 2 / 2;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   justify-self: end;
   z-index: 2;
   opacity: 0;
@@ -80,25 +88,30 @@
 .burger span {
   display: none;
 
-  width: 26px;
+  width: 25px;
   height: 2px;
-  background-color: var(--color-black);
+  background-color: var(--color-main-regular);
   position: absolute;
-  left: 2px;
+  left: 5px;
   transition: all 0.2s linear;
   opacity: 1;
 }
 
+/* nav */
+
 .nav {
   font-weight: var(--txt-bold);
-  gap: 15px;
+
+  gap: var(--basic-space);
   grid-column: 2;
   grid-row: 2;
+
   justify-self: end;
+  align-items: center;
 }
 
 .nav-item {
-  line-height: 20px;
+  line-height: 0.7rem;
 }
 
 .nav-item:hover {
@@ -109,8 +122,4 @@
   color: var(--color-accent);
   border-bottom: 2px solid;
   padding-bottom: 3px;
-}
-
-.fb-header:hover svg path {
-  fill: var(--color-accent);
 }
