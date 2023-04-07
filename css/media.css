@@ -80,6 +80,7 @@
     align-items: center;
     row-gap: 0px;
     padding: 0 15px;
+    max-width: 100%;
   }
   .header .info {
     background-color: var(--color-grey-bg);
