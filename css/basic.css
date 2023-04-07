@@ -42,13 +42,10 @@
   --txt-bold: 700;
   --txt-regular: 400;
 
-  --container-desktop-sd: 1440px;
-  --container-desktop-hd: 1920px;
-  --container-tablet-hd: 1024px;
-  --container-tablet-sd: 768px;
-  --container-mobile: 360px;
+  --container-wide: 1320px;
+  --container-small: 1080px;
 
-  --basic-space: 15px;
+  --basic-space: 60px;
 }
 
 * {
@@ -140,15 +137,19 @@ img {
 }
 
 .container {
-  max-width: var(--container-desktop-sd);
-  margin-left: auto;
   margin-right: auto;
-  padding: 0 60px;
+  margin-left: auto;
+  padding-right: var(--basic-space);
+  padding-left: var(--basic-space);
 }
 
-.mgy-auto {
-  margin-right: auto;
-  margin-left: auto;
+.wide {
+  max-width: var(--container-wide);
+}
+
+.small {
+  max-width: var(--container-small);
+  padding: 0 !important;
 }
 
 .dot-separator {
@@ -164,6 +165,10 @@ img {
 
 .align-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {

@@ -3,17 +3,16 @@
 }
 
 .header .container {
-  row-gap: var(--basic-space);
+  row-gap: 16px;
 }
 
 .header .logo {
   grid-area: 1 / 1 / span 2;
   gap: 4px;
-  align-items: center;
 }
 
 .logo-assets {
-  padding-top: calc(1.4 * var(--basic-space));
+  padding-top: 21px;
 }
 
 .logo .page {
@@ -36,12 +35,12 @@
   border-radius: 8px;
 }
 
-.lang:hover {
-  background-color: var(--color-grey-bg);
-}
-
 .lang-check {
   display: none;
+}
+
+.lang:hover {
+  background-color: var(--color-grey-bg);
 }
 
 .lang-check:checked + .lang {
@@ -81,7 +80,7 @@
   width: 25px;
   height: 25px;
   justify-self: end;
-  z-index: 2;
+  z-index: 5;
   opacity: 0;
 }
 
@@ -102,24 +101,44 @@
 .nav {
   font-weight: var(--txt-bold);
 
-  gap: var(--basic-space);
+  gap: 15px;
   grid-column: 2;
   grid-row: 2;
 
   justify-self: end;
-  align-items: center;
 }
 
 .nav-item {
-  line-height: 0.7rem;
+  line-height: 1.2rem;
+  padding-bottom: 5px;
+  position: relative;
 }
 
-.nav-item:hover {
-  border-bottom: 2px solid;
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  background-color: var(--color-active-regular);
+  transition: all 0.1s linear;
+}
+
+.nav-item:hover::after {
+  left: 0;
+  width: 100%;
 }
 
 .nav-item.active {
   color: var(--color-accent);
-  border-bottom: 2px solid;
-  padding-bottom: 3px;
+}
+
+.nav-item.active::after {
+  background-color: var(--color-accent);
+  left: 0;
+  width: 100%;
 }

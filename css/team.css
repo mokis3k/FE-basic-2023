@@ -4,18 +4,14 @@
 
 
 .team {
-  margin-top: 65px;
-}
-
-.team-title {
-  max-width: 1080px;
+  margin-top: var(--basic-space);
 }
 
 .members {
-  margin-top: 60px;
+  margin-top: var(--basic-space);
+
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 60px;
-  row-gap: 60px;
+  gap: var(--basic-space);
 }
 
 .card:hover .card-title {
@@ -33,7 +29,6 @@
 }
 
 .card-content {
-  justify-content: space-between;
   row-gap: 5px;  
 }
 
@@ -44,7 +39,6 @@
 }
 
 .arrow-button {
-  justify-content: center;
   grid-row: span 2;
 
   width: 32px;
