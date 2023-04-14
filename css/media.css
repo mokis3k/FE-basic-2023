@@ -16,7 +16,13 @@
 @media (max-width: 1024px) {
   :root {
     --container-wide: 1024px;
-    --container-small: 664px;
+  }
+  .small {
+    max-width: 100%;
+  }
+  .team-title {
+    max-width: 664px;
+    margin: 0 auto;
   }
 }
 
@@ -25,8 +31,13 @@
 @media (max-width: 880px) {
   :root {
     --container-wide: 768px;
-    --container-small: 768px;
   }
+  .small {
+    max-width: 100%;
+  }
+
+  /* header */
+
   .header .container {
     grid-template-columns: auto;
     row-gap: 30px;
@@ -41,9 +52,9 @@
     grid-area: 3 / 1;
     justify-self: start;
   }
-  .team .members {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+  /* footer */
+
   .footer .container {
     grid-template-columns: auto;
     row-gap: 25px;
@@ -53,6 +64,12 @@
     grid-row: 3;
     text-align: center;
   }
+
+  /* team */
+
+  .team .members {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* mobile */
@@ -60,7 +77,6 @@
 @media (max-width: 602px) {
   :root {
     --container-wide: 375px;
-    --container-small: 375px;
     --basic-space: 30px;
   }
 
@@ -68,6 +84,10 @@
   .fb-header,
   .header .address {
     display: none;
+  }
+
+  .small {
+    max-width: 100%;
   }
 
   /* header */
@@ -221,5 +241,6 @@
   }
   .team .team-title {
     font-size: 30px;
+    line-height: 2.3rem;
   }
 }
