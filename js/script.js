@@ -1,3 +1,3 @@
 $(".burger").click(function() {
-    $(this).toggleClass("burger-clicked")
+    $(this).toggleClass("burger-active")
 })
