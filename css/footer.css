@@ -41,10 +41,10 @@
   font-weight: var(--txt-bold);
 }
 
-.footer .contact {
+.footer-contact {
   font-weight: var(--txt-bold);
 }
 
-.footer .contact:hover {
+.footer-contact:hover {
   color: var(--color-accent);
 }

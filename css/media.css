@@ -5,9 +5,25 @@
     --container-wide: 1920px;
     --container-small: 1360px;
   }
-  .container {
+  .wide {
     padding-right: 160px;
     padding-left: 160px;
+  }
+
+  /* contact */
+
+  .contact-wrapper, .contact-form {
+    max-width: 650px;
+  }
+}
+
+/* container-small */
+
+@media (max-width: 1200px) {
+  .small {
+    max-width: var(--container-wide);
+    padding-right: var(--basic-space);
+    padding-left: var(--basic-space);
   }
 }
 
@@ -17,9 +33,6 @@
   :root {
     --container-wide: 1024px;
   }
-  .small {
-    max-width: 100%;
-  }
   .team-title {
     max-width: 664px;
     margin: 0 auto;
@@ -28,12 +41,9 @@
 
 /* tablet SD */
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
   :root {
     --container-wide: 768px;
-  }
-  .small {
-    max-width: 100%;
   }
 
   /* header */
@@ -69,6 +79,15 @@
 
   .team .members {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* contact */
+  
+  .contact .container {
+    flex-direction: column;
+  }
+  .contact-wrapper, .contact-form {
+    max-width: 100%;
   }
 }
 

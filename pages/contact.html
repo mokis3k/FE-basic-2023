@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../fonts/font.css">
-    <link rel="stylesheet" href="../css/team.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/media.css">
     <title>Document</title>
 </head>
@@ -117,16 +117,37 @@
     </header>
     <section class="contact">
         <div class="container small flex justify-between">
-            <div class="contact-wrapper">
-                <span>Kyiv, <br>Mechnikova str, 14</span>
+            <div class="contact-wrapper flex flex-column">
+                <span class="contact-address">Kyiv,<br>Mechnikova str, 14</span>
                 <hr>
-                <span class="phone">0800 211 927</span><br>
-                <a class="mail" href="">contact@forstudy.space</a>
+                <div class="contact-info flex flex-column">
+                    <span class="contact-phone">0800 211 927</span>
+                    <a class="contact-mail" href="">contact@forstudy.space</a>
+                </div>
                 <hr>
+                <div class="fb-contact flex align-center">
+                    <a href="https://www.facebook.com/Hillel.IT.School/?mibextid=LQQJ4d" target="_blank"><svg width="38"
+                            height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                                fill="#24A3FF" />
+                        </svg></a>
+                    <span>Our page<br>on facebook</span>
+                </div>
             </div>
-            <div class="contact-form">
+            <form class="contact-form flex flex-column">
                 <h1 class="contact-title">We would like to help you</h1>
-            </div>
+                <div class="flex flex-column gap-15px">
+                    <input class="contact-input" type="text" placeholder="Name" required>
+                    <textarea class="contact-input" placeholder="Message"></textarea>
+                </div>
+                <div class="flex flex-column gap-15px">
+                    <h3>How to answer you?</h3>
+                    <input class="contact-input" type="tel" placeholder="Phone number" required>
+                    <input class="contact-input" type="email" placeholder="Email">
+                </div>
+                <button class="contact-button">Send message</button>
+            </form>
         </div>
     </section>
     <footer class="footer">
@@ -150,7 +171,7 @@
                 <span class="dot-separator"></span>
                 <a class="phone" href="tel:+380800211927">0800 211 927</a>
                 <span class="dot-separator"></span>
-                <a class="contact" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+                <a class="footer-contact" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
             </div>
         </div>
     </footer>

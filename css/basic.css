@@ -136,6 +136,14 @@ img {
   object-fit: cover;
 }
 
+input, textarea, button {
+  font-family: inherit;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--color-grey-text)
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -149,7 +157,7 @@ img {
 
 .small {
   max-width: var(--container-small);
-  padding: 0 !important;
+  padding: 0;
 }
 
 .dot-separator {
@@ -175,12 +183,20 @@ img {
   justify-content: space-between;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .grid {
   display: grid;
 }
 
 .grid-2-columns {
   grid-template-columns: auto auto;
+}
+
+.gap-15px {
+  gap: 15px;
 }
 
 .hidden {
