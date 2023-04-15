@@ -160,11 +160,12 @@
     flex-direction: column;
 
     background-color: var(--color-white);
+    border-radius: 12px;
 
     gap: 15px;
     padding: 64px 12px 12px 12px;
     position: fixed;
-    inset: 45px 0 0 0;
+    inset: 45px 8px 8px 8px;
     z-index: 2;
 
     transition: all 0.15s linear;
